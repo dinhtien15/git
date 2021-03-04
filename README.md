@@ -55,4 +55,18 @@ BÁO CÁO TÌM HIỂU VỀ SERVER VÀ LINUX CƠ BẢN
   VD: máy chủ Twin 1U gồm 2 máy chủ con gọi là node, mỗi node kích thước 0,5U theo chiều ngang, 2 node sử dụng chung 1 nguồn điện
     ->Ưu điểm:giảm nguồn điện chi phí làm mát, không gian và tăng hiệu suất so với máy chủ 1U
 5.Mainbroad,CPU,RAM,HDD(Santa,SSD)
-  5.1.Mainbroad: là nơi gắn kết
+   5.1.Mainbroad: là nơi gắn kết tất cả các linh kiện và thiết bị ngoại vi thành 1 khối,điều khiển tốc độ và đường đi của luồng dữ liệu giữa các thiết bị
+    -bao gồm:Socket CPU(liên lạc vs các thiết bị khác thông qua chip cầu bắc),Chíp cầu bắc(VGA-RAM), chip cầu nam(giao tiếp ổ cứng,chip LAN,chip Audio,USB,khe PCI,chip SIO,chip BIOS), chip SIO(keyboard,mouse,ổ mềm,cổng máy in, cổng serial),chip BIOS(chứa ctrinh CMOS Setup,POST)
+   5.2.CPU(Central Processing Unit): bộ xử lý trung tâm, xử lý tất cả các lệnh mà nó nhận được từ phần cứng và phần mềm chạy trên máy tính
+   5.3.RAM(Random Access Memory) bộ nhớ truy cập ngẫu nhiên.
+    ->hiểu nôm na là nơi máy tính lưu trữ thông tin tạm thời để chuyển cho CPU xử lý
+   +SDRAM(Synchronous dynamic random access memory): Bộ nhớ truy cập ngẫu nhiên động đồng bộ
+   +DDRAM:DDRAM chính là SDRAM nhưng tần xuất xử lý thông tin của nó được cải tiến nhanh gấp nhiều lần
+        ->DDRAM 1,2,3,4 ~ 266-400mhz,400-800,800-1600,1600-3200
+   5.4: HDD,SSD
+     5.4.1. HDD(Hard disk drive):lưu dữ liệu bằng cách ghi lên đĩa từ được xoay trên động cơ, có loại kích cỡ 3,5 và 2,5 inch , SATA 3, 5,25inch(máy tính thế hệ đầu)
+      ->tốc độ ->100mb/s
+     7.4.2. SSD(Solid state drive): là ổ cứng điện tử, là thiết bị lưu trữ dl cho máy tính sử dụng bộ nhớ bán dẫn như SRAM,DRAM
+      ->3 loại ổ SSD: NVMe,SATA(sd hầu hết cho laptop hiện nay),M.2
+      ->tốc độ ->3500mb/s
+6.
