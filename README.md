@@ -37,7 +37,7 @@ BÁO CÁO TÌM HIỂU VỀ SERVER VÀ LINUX CƠ BẢN
 
 1.4.2. Chức năng
 
-+Dedicated Server:chạy trên phần cứng và các thiết bị hỗ trợ riêng biệt
++Dedicated Server:chạy trên phần cứng và có các thiết bị hỗ trợ riêng biệt
 
   ->Ưu:tài nguyên độc lập, hiệu suất cao,người dùng toàn quyền quản trị
 
@@ -139,3 +139,32 @@ BÁO CÁO TÌM HIỂU VỀ SERVER VÀ LINUX CƠ BẢN
 
   ->tốc độ ->3500mb/s
 
+6.RAID CARD(Redundant Arrays of Inexpensive Disks) có chức năng hỗ trợ RAID có thể vận hành trong máy chủ là nơi tập trung các cáp dữ liệu nối các đĩa cứng trong hệ thống RAID và nó xử lý tòa bộ dữ liệu đi qua nó
+
+- Có 2 dạng Card RAID là card Onbroad và card RAID rời
+
+RAID 0:yêu cầu tối thiếu 2 đĩa cứng, cho phép máy tính ghi dữ liệu theo phương thức Striping. VD: có 100MB sẽ dồn mỗi đĩa 50MB
+
+-> Ưu điểm : thích hợp cho những người dùng cần truy cập nhanh khối lượng dữ liệu lớn, nhanh
+
+-> Nhược : Nguy cơ mất dữ liệu do cơ chế ghi thông tin xé lẻ
+
+RAID 1 : Dữ liệu được ghi vào 2 ổ giống hệt nhau (Mirroring), 1 ổ gặp trục trặc ổ còn lại vẫn hđ bình thường, dung lượng cuối cùng của RAID 1 = Dung lượng ổ đơn
+
+->Ưu : nếu một trong 2 ổ bị hỏng không lo bị mất dữ liệu, an toàn
+
+->Nhược : Hiệu năng không cao
+
+RAID 0 + 1 (RAID 10) : Cần tối thiểu 4 đĩa cứng để chạy, dữ liệu được ghi đồng thời lên 4 đĩa, dung lượng cuối cùng = tổng dung lượng 4 ổ /2
+
+->Ưu : tổng hợp ưu điểm của 2 hệ thống RAID 0 và 1
+
+->Nhược : chi phí khá đắt
+
+RAID 5 : dữ liệu và bản sao lưu được chia lên tất cả các ổ cứng ,dung lượng ổ đĩa cuối = tổng dung lượng đĩa sử dụng trừ đi 1 ổ.
+
+VD: 8 đoạn dl(1-8) 3 ổ đĩa cứng, 1,2 được lưu vào ổ 1 và 2 riêng, bản sao lưu ghi vào ổ 3. 3,4 đc ghi vào ổ 1,3 sao lưu vào ổ 2, đoạn 5,6 được lưu vào ổ 2,3 sao lưu vào ổ đĩa 1. sau đó lặp lại 7,8 lưu vào 1,2 lưu trữ ổ 3. 
+
+-> Ưu : đảm bảo tốc độ cải thiện, giữ được tính an toàn cao
+
+RAID 6 :
