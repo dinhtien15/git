@@ -143,7 +143,7 @@ BÁO CÁO TÌM HIỂU VỀ SERVER VÀ LINUX CƠ BẢN
 
 - Có 2 dạng Card RAID là card Onbroad và card RAID rời
 
-RAID 0:yêu cầu tối thiếu 2 đĩa cứng, cho phép máy tính ghi dữ liệu theo phương thức Striping. VD: có 100MB sẽ dồn mỗi đĩa 50MB
+RAID 0 : yêu cầu tối thiếu 2 đĩa cứng, cho phép máy tính ghi dữ liệu theo phương thức Striping. VD: có 100MB sẽ dồn mỗi đĩa 50MB
 
 -> Ưu điểm : thích hợp cho những người dùng cần truy cập nhanh khối lượng dữ liệu lớn, nhanh
 
@@ -167,4 +167,15 @@ VD: 8 đoạn dl(1-8) 3 ổ đĩa cứng, 1,2 được lưu vào ổ 1 và 2 ri�
 
 -> Ưu : đảm bảo tốc độ cải thiện, giữ được tính an toàn cao
 
-RAID 6 :
+RAID 6 : là sự cải tiến từ RAID 5, mỗi dữ liệu được lưu trữ ở ít nhất 3 vị trí(trở lên), yêu cầu tối thiểu 4 ổ cứng, cho phép hỏng 2 ổ cứng hệ thống vẫn hđ bình thường -> RAID 6 thường chỉ được sử dụng trong các máy chủ chứa dữ liệu cực kỳ quan trọng
+
+-> Ưu : độ dự phòng cao hơn và hiệu suất đọc tốt hơn
+
+-> Nhược : máy chủ thực hiện quá nhiều thao tác ghi , hiệu suất sẽ giảm
+
+NIC Card ( Network Interface Card) là bản mạch cung cấp khả năng truyền thông mạng cho một máy tính còn được gọi là LAN Adapter
+
+Chức năng : truyền tín hiệu ở lớp vật lý và cung cấp các gói dữ liệu ở lớp mạng
+
+Các thành phần của NIC Card : Bộ đk, Ổ cắm ROM , Cổng NIC cho cáp/bộ thu phát, Giao diện Bus, Đèn báo LED, Giá đỡ
+
