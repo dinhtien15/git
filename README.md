@@ -173,9 +173,10 @@ RAID 6 : là sự cải tiến từ RAID 5, mỗi dữ liệu được lưu tr�
 
 -> Nhược : máy chủ thực hiện quá nhiều thao tác ghi , hiệu suất sẽ giảm
 
-NIC Card ( Network Interface Card) là bản mạch cung cấp khả năng truyền thông mạng cho một máy tính còn được gọi là LAN Adapter
+7. NIC Card ( Network Interface Card) là bản mạch cung cấp khả năng truyền thông mạng cho một máy tính còn được gọi là LAN Adapter
 
 Chức năng : truyền tín hiệu ở lớp vật lý và cung cấp các gói dữ liệu ở lớp mạng
 
 Các thành phần của NIC Card : Bộ đk, Ổ cắm ROM , Cổng NIC cho cáp/bộ thu phát, Giao diện Bus, Đèn báo LED, Giá đỡ
 
+8.
