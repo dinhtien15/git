@@ -141,7 +141,7 @@ BÁO CÁO TÌM HIỂU VỀ SERVER VÀ LINUX CƠ BẢN
 
 6.RAID CARD(Redundant Arrays of Inexpensive Disks) có chức năng hỗ trợ RAID có thể vận hành trong máy chủ là nơi tập trung các cáp dữ liệu nối các đĩa cứng trong hệ thống RAID và nó xử lý tòa bộ dữ liệu đi qua nó
 
-- Có 2 dạng Card RAID là card Onbroad và card RAID rời
+RAID là chữ viết tắt của Redundant Array of Independent Disks. Ban đầu, RAID được sử dụng như một giải pháp phòng hộ vì nó cho phép ghi dữ liệu lên nhiều đĩa cứng cùng lúc. Về sau, RAID đă có nhiều biến thể cho phép không chỉ đảm bảo an toàn dữ liệu mà còn giúp gia tăng đáng kể tốc độ truy xuất dữ liệu từ đĩa cứng.
 
 RAID 0 : yêu cầu tối thiếu 2 đĩa cứng, cho phép máy tính ghi dữ liệu theo phương thức Striping. VD: có 100MB sẽ dồn mỗi đĩa 50MB
 
@@ -175,6 +175,8 @@ RAID 6 : là sự cải tiến từ RAID 5, mỗi dữ liệu được lưu tr�
 
 7. NIC Card ( Network Interface Card) là bản mạch cung cấp khả năng truyền thông mạng cho một máy tính
 
+Có thể chia card mạng làm 2 loại có dây(cable) và không dây(wifi)
+
 Chức năng : truyền dữ liệu qua lại giữa các máy tính, dữ liệu đc chuyển từ dạng byte và bit sang tín hiệu điện
 
 Đặc điểm của card mạng là địa chỉ MAC(6 byte), 3 byte là mã số của chính nhà sx ra card mạng, 3 byte là số seri của card mạng. Chính vì vậy các địa chỉ MAC của card không thể giống nhau, nên đường truyền dữ liệu đều chính xác tuyệt đối
@@ -190,3 +192,56 @@ Chức năng của IPMI
   
   + Đăng nhập và kiểm kê : duy trì các bản ghi pertaining giúp khắc phục sự cố về hdh
   
+9. Tìm hiểu về Storage
+
+Storage (lưu trữ) là một thành phần quan trọng của thiết bị kỹ thuật số để duy trì dữ liệu số và lưu trữ dữ liệu
+
+Các thiết bị lưu trữ lâu dài : Đĩa cứng , đĩa mềm, đĩa quang, băng từ
+
+Các thiết bị lưu trữ dữ liệu ngắn : RAM, Cache
+
+3 thông số quan trọng trong các hệ thống Storage : IOPS , Throughput , Latency
+
+10.Hotspare là gì?
+
+Hotspase dự phòng nóng được sử dụng như một cơ chế chuyển đổi dự phòng để cung cấp độ tin cậy trong cấu hình hệ thống. Khi một bộ phận quan trọng bị lỗi, hotspare sẽ được chuyển sang hoạt động.
+
+Kích thước của ổ dự phòng nóng phải bằng hoặc lớn hơn kích thước của ổ nhỏ nhất trong nhóm lưu trữ
+
+11.Iops
+
+IOPS là viết tắt của Input - output operation per seconds (truy cập đọc viết mỗi giây). Là tỷ lệ số lượng các hoạt động được thực hiện bởi thiết bị lưu trữ trong một khoảng thời gian 1 giây.
+
+IOPS càng cao thì càng nhiều thao tác có thể thực hiện đồng thời cùng 1 lúc, tốc độ xử lý càng nhanh -> trực tiếp dẫn tới tốc độ hoạt động ứng dụng
+
+12.Throughout là lượng thông tin được truyền đi trên mạng trong một đơn vị thời gian. Chính throughput là chỉ số để đánh giá mạng nhanh hay chậm
+
+Cách test chất lượng của 1 ổ đĩa : tại cửa sổ command prompt gõ lệnh "wmic", sau đó gõ lệnh "diskdrive get status" -> OK là ổ đĩa ổn. Hoặc có thể kiểm tra bằng các phần mềm chuyên dùng : hard disk sentinel, CrystalDiskInfo,...
+
+Cách test RAM : dùng Windows Memory Diagnostic. ->RUN gõ lệnh mdsched.exe ->Control Panel > All Control Panel Items > Administrative Tools -> Restart máy.
+
+Kiểm tra lỗi card mạng: Mở Device Manager. My Computer -> Manage -> Device Manager -> Network adapter -> Trả về kết quả This Device is working correcly tức là thiết bị hoạt động bình thường
+
+13. Các dạng file system
+
+File system là thứ được hdh sủ dụng để điều khiển việc đọc và ghi dữ liệu. File system cho phép người dùng truy cập nhanh chóng và an toàn khi vào các tệp tin thư mục cần thiết
+
+Loại filesystem của Windows: NTFS,VFAT
+
+Loại filesystem của Linux : EXT2,EXT3,EXT4,XFS,BTRFS,..
+
+14. Hệ thống file thư mục
+
+/bin: chứa các chương trình cơ bản
+
+/etc: chứa các tập tin cấu hình hệ thống
+
+/root: các tệp cá nhân của quản trị viên
+
+/home: thư mục dùng cho user
+
+/opt : thư mục chứa các phần mềm đã cài thêm
+
+15. Phân chia partion cho OS
+
+Tại sao lại phân chia vùng cho OS : dễ cài lại win
