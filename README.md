@@ -177,7 +177,7 @@ RAID 6 : là sự cải tiến từ RAID 5, mỗi dữ liệu được lưu tr�
 
 Chức năng : truyền dữ liệu qua lại giữa các máy tính, dữ liệu đc chuyển từ dạng byte và bit sang tín hiệu điện
 
-Đặc điểm của card mạng là địa chỉ MAC(6 byte), 3 byte là mã số của chính nhà sx ra card mạng, 3 byte là số seri của card mạng
+Đặc điểm của card mạng là địa chỉ MAC(6 byte), 3 byte là mã số của chính nhà sx ra card mạng, 3 byte là số seri của card mạng. Chính vì vậy các địa chỉ MAC của card không thể giống nhau, nên đường truyền dữ liệu đều chính xác tuyệt đối
 
 
 8.IPMI (Intelligent Platform Management Interface) : Giao diện quản lý nền tảng thông minh là một tập hợp các giao diện được quản trị viên hệ thống sử dụng để quản lý ngoài băng tần của hệ thống máy tính và giám sát hoạt động của hệ thống máy tính đó.
