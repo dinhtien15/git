@@ -29,11 +29,11 @@ BÁO CÁO TÌM HIỂU VỀ SERVER VÀ LINUX CƠ BẢN
 
    ->Nhược điểm:các giá đỡ nhiều máy chủ đòi hỏi nhiều bộ phận làm mát hơn, làm tăng chi phí năng lượng
 
-+Blade Server: là một kiến trúc mới nhất hiện nay thay thế cho những máy chủ server truyền thống
++Blade Server: là một máy tính dạng modun mỏng nhẹ, có thể trượt vào và ra khỏi một giá đỡ. Một blade server thường được đặt bên trong vỏ máy(blade enclosure) cùng với các blade server khác. Tập hợp đầy đủ các blade server này được gọi là blade system(hệ thống phiến)
 
-  ->Ưu điểm: hao tốn năng lượng thấp, cung cấp sức mạnh xử lý cao trong khi chiếm không gian tối thiểu
+  ->Ưu điểm: hao tốn năng lượng thấp, cung cấp sức mạnh xử lý cao trong khi chiếm không gian tối thiểu, dễ dàng tháo lắp, tiết kiệm không gian
 
-  ->Nhược điểm:chi phí năng lượng, chi phí trả trước
+  ->Nhược điểm:đòi hỏi có các thiết bị làm mát chuyên nghiệp và đồng bộ đi kèm thì mới phát huy được hết công suất.
 
 1.4.2. Chức năng
 
@@ -41,7 +41,7 @@ BÁO CÁO TÌM HIỂU VỀ SERVER VÀ LINUX CƠ BẢN
 
   ->Ưu:tài nguyên độc lập, hiệu suất cao,người dùng toàn quyền quản trị
 
-  ->Nhược:nâng cấp phức tạp
+  ->Nhược:nâng cấp phức tạp , chi phí cao
 
 +VPS(Virtual Private Server):được tạo ra bằng phương pháp ảo hóa để chia tách máy chủ vật lý riêng thành nhiều máy chủ ảo khác nhau
 
@@ -51,9 +51,9 @@ BÁO CÁO TÌM HIỂU VỀ SERVER VÀ LINUX CƠ BẢN
 
 +Cloud Server:được xây dựng trên công nghệ điện toán đám mây, ảo hóa ứng dụng
 
-  ->Ưu:cơ chế đồng bộ dữ liệu, khả năng tự động thay thế khi gặp sự cố 
+  ->Ưu:sao lưu và khôi phục từ mọi vị trí mọi thiết bị, khả năng tự động thay thế (ngay lập tức) khi gặp sự cố ,không cần phần cứng tại chỗ
 
-  ->Nhược:
+  ->Nhược: không thể truy cập nếu không có kết nối internet, chi phí cho việc phục hồi dữ liệu lớn
 
 2.Tủ rack
 
@@ -73,7 +73,7 @@ BÁO CÁO TÌM HIỂU VỀ SERVER VÀ LINUX CƠ BẢN
 
   +là loại tủ được thiết kế treo tường ,phù hợp với hệ thống mạng đơn giản
 
-  ->Ưu điểm:nhỏ gọn tiết kiệm không gian sàn
+  ->Ưu điểm:nhỏ gọn tiết kiệm không gian sàn,bảo vệ thiết bị khỏi một số tác động bên ngoài, đơn giản lắp ,quản trị máy chủ và các thiết bị mạng
 
   ->Nhược: hạn chế về kích thước và khối lượng thiết bị trong tủ
 
@@ -81,15 +81,15 @@ BÁO CÁO TÌM HIỂU VỀ SERVER VÀ LINUX CƠ BẢN
 
   +là hệ thống giá đỡ sử dụng để chứa máy tính và các thiết bị mạng, bao gồm hệ thống khung được xếp khoa học, không có cửa trước sau và mặt trên
 
-  ->Ưu:lắp đặt, tiếp cận dây cáp, bảo trì thiết bị dễ dàng
+  ->Ưu:lắp đặt, tiếp cận dây cáp, bảo trì thiết bị dễ dàng, tối ưu làm mát bằng không khí,chi phí đầu tư thấp
 
-  ->Nhược: thiếu an toàn
+  ->Nhược: thiếu an toàn về bảo mật, tính thẩm mỹ thấp
 
 2.2.4.Tủ Our Door Rack
 
-  +là loại tủ được thiết kế để sử dụng ngoài trời, phù hợp cho các thiết bị viễn thông và điều khiển
+  +là loại tủ được thiết kế để sử dụng ngoài trời, phù hợp cho các thiết bị viễn thông và điều khiển. Được thiết kế với vỏ thép dày, vững chắc
       
-  ->Ưu:tính bảo mật cao, an toàn
+  ->Ưu:chống cháy, cách nhiệt, chống va đập từ bên ngoài, tính bảo mật cao
 
   ->Nhược:vận chuyển khó khăn, chi phí đầu tư lớn.
 
@@ -173,10 +173,20 @@ RAID 6 : là sự cải tiến từ RAID 5, mỗi dữ liệu được lưu tr�
 
 -> Nhược : máy chủ thực hiện quá nhiều thao tác ghi , hiệu suất sẽ giảm
 
-7. NIC Card ( Network Interface Card) là bản mạch cung cấp khả năng truyền thông mạng cho một máy tính còn được gọi là LAN Adapter
+7. NIC Card ( Network Interface Card) là bản mạch cung cấp khả năng truyền thông mạng cho một máy tính
 
-Chức năng : truyền tín hiệu ở lớp vật lý và cung cấp các gói dữ liệu ở lớp mạng
+Chức năng : truyền dữ liệu qua lại giữa các máy tính, dữ liệu đc chuyển từ dạng byte và bit sang tín hiệu điện
 
-Các thành phần của NIC Card : Bộ đk, Ổ cắm ROM , Cổng NIC cho cáp/bộ thu phát, Giao diện Bus, Đèn báo LED, Giá đỡ
+Đặc điểm của card mạng là địa chỉ MAC(6 byte), 3 byte là mã số của chính nhà sx ra card mạng, 3 byte là số seri của card mạng
 
-8.
+
+8.IPMI (Intelligent Platform Management Interface) : Giao diện quản lý nền tảng thông minh là một tập hợp các giao diện được quản trị viên hệ thống sử dụng để quản lý ngoài băng tần của hệ thống máy tính và giám sát hoạt động của hệ thống máy tính đó.
+
+Chức năng của IPMI 
+
+  + Kiểm soát nguồn trên máy chủ : có thể thực hiện các thao tác bật, tắt , khởi động lại máy chủ từ xa
+  
+  + Giám sát phần cứng : trạng thái, tốc độ quạt, nhiệt độ và trạng thái CPU. Tính năng email thông báo
+  
+  + Đăng nhập và kiểm kê : duy trì các bản ghi pertaining giúp khắc phục sự cố về hdh
+  
