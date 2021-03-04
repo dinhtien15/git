@@ -224,11 +224,11 @@ Kiểm tra lỗi card mạng: Mở Device Manager. My Computer -> Manage -> Devi
 
 13. Các dạng file system
 
-File system là thứ được hdh sủ dụng để điều khiển việc đọc và ghi dữ liệu. File system cho phép người dùng truy cập nhanh chóng và an toàn khi vào các tệp tin thư mục cần thiết
+File system là thứ được hdh sủ dụng để điều khiển việc đọc và ghi dữ liệu. File system cho phép người dùng truy cập nhanh chóng và an toàn khi vào các tệp tin thư mục cần thiết.
 
 Loại filesystem của Windows: NTFS,VFAT
 
-Loại filesystem của Linux : EXT2,EXT3,EXT4,XFS,BTRFS,..
+Loại filesystem của Linux : EXT2,EXT3,EXT4,XFS,BTRFS,NTFS,..
 
 14. Hệ thống file thư mục
 
@@ -244,4 +244,6 @@ Loại filesystem của Linux : EXT2,EXT3,EXT4,XFS,BTRFS,..
 
 15. Phân chia partion cho OS
 
-Tại sao lại phân chia vùng cho OS : dễ cài lại win
+Tại sao lại phân chia vùng cho OS : Dễ cài lại win,sao lưu đơn giản hơn,cải thiện bảo mật, cài đặt nhiều hệ điều hành, sử dụng nhiều hệ thống file
+
+Nhược điểm phân vùng : Giải quyết nhiều phân vùng cùng lúc và không gian bị lãng phí
