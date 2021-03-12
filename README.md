@@ -1,16 +1,10 @@
 BÁO CÁO TÌM HIỂU VỀ SERVER VÀ LINUX CƠ BẢN
 
-1.Phần cứng máy chủ
-
-  Phần cứng máy chủ là gì: Là các thành phần linh kiện cứng cấu tạo lên hệ thống máy chủ
+1.Phần cứng máy chủ : Là các thành phần linh kiện cứng cấu tạo lên hệ thống máy chủ
   
-1.2.Các thành phần
+1.2.Các thành phần : Bo mạch chủ,bộ vxl(CPU),bộ nhớ RAM, ổ cứng(HDD), bo điều khiển raid(RAID Controller), bộ cung cấp nguồn(PSU)
 
-   + Bo mạch chủ,bộ vxl(CPU),bộ nhớ RAM, ổ cứng(HDD), bo điều khiển raid(RAID Controller), bộ cung cấp nguồn(PSU)
-
-1.3.Server là gì?
-
-  +là trung tâm kết nối các máy tính trong một văn phòng, công ty cơ quan lại với nhau,.. Là nơi trao đổi dl, điều hành chung của mạng máy tính
+1.3.Server là gì : là trung tâm kết nối các máy tính trong một văn phòng, công ty cơ quan lại với nhau,.. Là nơi trao đổi dl, điều hành chung của mạng máy tính
   
   
 1.4. Các dạng máy chủ thường gặp
